@@ -13,7 +13,7 @@ class newcontroller extends Controller
      */
     public function inicio () {
 
-        return view('inicio');
+        return ('inicio');
 
     }
 
