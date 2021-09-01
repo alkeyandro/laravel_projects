@@ -11,9 +11,9 @@ class xController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function xindex()
     {
-        return view('index');
+        return view('xindex');
     }
 
     /**
@@ -21,9 +21,9 @@ class xController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function xcreate()
     {
-        //
+        return view('xcreate');
     }
 
     /**
@@ -32,9 +32,9 @@ class xController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function xstore(Request $request)
     {
-        //
+        return view('xstore');
     }
 
     /**
@@ -43,42 +43,8 @@ class xController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function xshow($id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return view('xshow');
     }
 }
