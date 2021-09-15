@@ -39,12 +39,13 @@ Route::view('/ydestroy', [yController::class, 'ydestroy']);
 //Route::view('/zindex/{value}', [zController::class, 'zindex']);
 //Route::view('/zindex', [zController::class, 'welcome']);
 
-// 'get' view
+// vista por sección
+Route::view('/xindex', [xController::class, 'xindex']);
+Route::view('/yindex', [zController::class, 'vistaHija']);
+Route::view('/zindex', [yController::class, 'layouts/vistaPadre']);
+
+//Películas
+
 Route::get('/hola/{id}/{user}', function ($id,$user) {
 	return "Hola: ".$user." tu ID es: ".$id;
 });
-
-// vista por sección
-Route::view('/xindex', [xController::class, 'xindex']);
-Route::view('/zindex', [zController::class, 'vistaHija']);
-Route::view('/yindex', [yController::class, 'vistaHija']);
